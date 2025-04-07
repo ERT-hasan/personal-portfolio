@@ -1,35 +1,8 @@
-# personal-portfolio
-<h1 align="center">👋 Hi, I'm Md Wasim Hasan</h1>
+# React + Vite
 
-<p align="center">
-  🎨 Front-End Developer | ⚛️ Building sleek UIs with <strong>React</strong> & <strong>Tailwind CSS</strong>
-</p>
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
----
+Currently, two official plugins are available:
 
-## 🌟 About Me
-
-I'm a passionate Front-End Developer focused on creating modern, responsive, and user-friendly web interfaces  
-using **React** and **Tailwind CSS**. I love crafting clean layouts and smooth experiences for the web.
-
----
-
-## 🛠️ Tech Stack
-
-- ⚛️ React  
-- 🎨 Tailwind CSS, CSS3, HTML5  
-- 🧠 JavaScript (ES6+)  
-- 🛠️ Tools: Git, GitHub, VS Code, Postman  
-
----
-
-## 📫 Let's Connect
-
-- 🌐 [Portfolio Website](https://your-portfolio-link.com)  
-- 💼 [LinkedIn](https://www.linkedin.com/in/your-profile)  
-- 📧 Email: yourname@example.com  
-
----
-
-<p align="center">Thanks for stopping by! 🚀</p>
-
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
