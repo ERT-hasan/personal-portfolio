@@ -67,6 +67,7 @@ Follow these steps:
 
 ```bash
 # 1. Clone the repo
+https://github.com/ERT-hasan/personal-portfolio
 
 
 # 2. Navigate to the folder
