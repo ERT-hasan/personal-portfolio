@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import hasan from "../assets/wasim.jpg"; 
+import hasan from "../assets/wasim.jpg";
 
 const Hero = () => {
-  const [showPhoto, setShowPhoto] = useState(true);
-  const [currentPhoto, setCurrentPhoto] = useState(hasan);
+  const [showPhoto] = useState(true);
+  const [currentPhoto] = useState(hasan);
+
+  // 📌 Make sure to use full path for GitHub Pages deployment
+  const resumeURL = "/personal-portfolio/MD-WASIM-HASAN13.pdf";
 
   return (
     <section
@@ -27,17 +30,10 @@ const Hero = () => {
 
         {/* Hero Text */}
         <div className="text-center md:text-left max-w-2xl">
-          {/* "Frontend Developer" Motion Animation (Repeats Every 2 Sec) */}
           <motion.h1
             className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-orange-500 via-blue-500 to-green-500 text-transparent bg-clip-text mb-4"
             initial={{ x: -30, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            transition={{
-              // duration: 1,
-              // repeat: Infinity, 
-              // repeatDelay: 0.60, 
-              // ease: "easeInOut",
-            }}
           >
             Frontend Developer
           </motion.h1>
@@ -58,14 +54,13 @@ const Hero = () => {
           </p>
 
           {/* Buttons */}
-                    <div className="flex flex-col sm:flex-row gap-4 items-center mt-6 justify-center md:justify-start">
-            <a href="/MD-WASIM-HASAN11.pdf" target="_blank" rel="noopener noreferrer">
+          <div className="flex flex-col sm:flex-row gap-4 items-center mt-6 justify-center md:justify-start">
+            <a href={resumeURL} target="_blank" rel="noopener noreferrer" download>
               <button className="bg-blue-500 shadow-lg hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 cursor-pointer px-8 py-3 rounded-lg transition">
                 Open CV
               </button>
             </a>
           </div>
-
         </div>
       </div>
     </section>
