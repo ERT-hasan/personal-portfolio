@@ -6,33 +6,22 @@ const Hero = () => {
   const [showPhoto] = useState(true);
   const [currentPhoto] = useState(hasan);
 
-  // Resume will auto-load correctly from GitHub Pages & Local
   const resumeURL = `${import.meta.env.BASE_URL}resume.pdf`;
 
   return (
     <section
       id="home"
-      className="pt-20 md:pt-40 min-h-screen bg-gradient-to-b from-gray-800 to-gray-900"
+      className="bg-gradient-to-b from-gray-800 to-gray-900 pt-24 pb-16"
     >
-      <div
-        className="
-          max-w-5xl mx-auto px-3 sm:px-4 lg:px-6 h-full
-          flex flex-col md:flex-row
-          items-start md:items-center
-          gap-7
-        "
-      >
+      <div className="max-w-5xl mx-auto px-3 sm:px-4 lg:px-6 flex flex-col md:flex-row gap-8 items-center md:items-center">
+
         {/* Profile Image */}
-        <div className="relative flex justify-center md:justify-start w-full md:w-auto">
+        <div className="flex justify-center md:justify-start w-full md:w-auto">
           {showPhoto && (
-            <figure
-              className="
-                flex items-center justify-center
-                w-[150px] h-[150px]
-                sm:w-[200px] sm:h-[200px]
-                md:w-[230px] md:h-[230px]
-              "
-            >
+            <figure className="flex items-center justify-center
+                               w-[150px] h-[150px]
+                               sm:w-[200px] sm:h-[200px]
+                               md:w-[230px] md:h-[230px]">
               <img
                 className="w-full h-full rounded-full object-cover border-4 border-purple-500 shadow-lg"
                 src={currentPhoto}
@@ -46,8 +35,8 @@ const Hero = () => {
         <div className="text-center md:text-left max-w-2xl w-full">
           <motion.h1
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold
-              bg-gradient-to-r from-orange-500 via-blue-500 to-green-500
-              text-transparent bg-clip-text mb-4"
+                       bg-gradient-to-r from-orange-500 via-blue-500 to-green-500
+                       text-transparent bg-clip-text mb-4"
             initial={{ x: -30, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
           >
@@ -62,18 +51,16 @@ const Hero = () => {
               Backend Developer (Fresher)
             </span>{" "}
             with hands-on experience in{" "}
-            <span className="text-purple-400 font-semibold">
-              Node.js, Express, and MongoDB
-            </span>
-            . I completed my{" "}
+            <span className="text-purple-400">Node.js, Express, and MongoDB</span>.
+            I completed my{" "}
             <span className="text-blue-400 font-semibold">MCA in 2024</span> and
             recently built an Airbnb-style backend project using{" "}
             <span className="text-pink-400 font-semibold">MVC architecture</span>.
-            I&apos;m looking for an opportunity where I can learn, grow, and work
-            on real-world backend systems.
+            I&apos;m looking for an opportunity where I can learn, grow, and work on
+            real-world backend systems.
           </p>
 
-          {/* Buttons */}
+          {/* Button */}
           <div className="flex flex-col sm:flex-row gap-4 items-center mt-6 justify-center md:justify-start">
             <a href={resumeURL} download="resume.pdf">
               <button className="bg-blue-500 shadow-lg hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 cursor-pointer px-8 py-3 rounded-lg transition">
