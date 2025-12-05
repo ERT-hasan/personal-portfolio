@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaJs, FaReact, FaHtml5, FaBootstrap, FaNodeJs } from 'react-icons/fa';
 import { SiTailwindcss, SiExpress, SiDocker } from 'react-icons/si';
 
@@ -17,10 +16,10 @@ const About = () => {
   return (
     <section 
       id="about" 
-      className="fixed-w-full flex justify-center items-center bg-gray-900 py-24"
+      className="fixed-w-full flex justify-center items-center bg-gray-900 py-1"
     >
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
-        <h2 className="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-orange-500 via-blue-500 to-green-500 text-transparent bg-clip-text animate-gradient">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-7">
+        <h2 className="text-4xl font-bold mb-10 text-center bg-gradient-to-r from-orange-500 via-blue-500 to-green-500 text-transparent bg-clip-text animate-gradient">
           About Me
         </h2>
 
@@ -28,7 +27,7 @@ const About = () => {
           {/* About Text */}
           <div>
             <p className="text-lg font-medium text-amber-300 leading-relaxed bg-gradient-to-r from-orange-800 dark:from-orange-400 via-blue-800 dark:via-blue-400 to-green-800 dark:to-green-400  bg-clip-text bg-300% animate-gradient">
-              I'm a passionate Full-Stack MERN Developer (Fresher) eager to build dynamic and user-friendly web applications. Currently, I'm exploring backend development with Node.js & Express.js to enhance my full-stack expertise.
+              I&apos;m a passionate Full-Stack MERN Developer (Fresher) eager to build dynamic and user-friendly web applications. Currently, I&apos;m exploring backend development with Node.js &amp; Express.js to enhance my full-stack expertise.
               <br /><br />
               💡 <strong>Key Skills:</strong> React.js, JavaScript, Tailwind CSS, MongoDB, Express.js, Node.js, Docker, REST APIs  
               🎯 <strong>Goal:</strong> Contribute to impactful projects, learn new technologies, and grow as a skilled developer.  

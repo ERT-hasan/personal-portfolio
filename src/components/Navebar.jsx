@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
-import logo from '../assets/wasim.jpg'; // Import your logo
+
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -30,11 +30,11 @@ const Navbar = () => {
 
     return (
         <nav className="fixed w-full bg-gray-900 shadow-lg z-50">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-8">
                 <div className="flex justify-between h-16 items-center">
                     {/* Logo */}
                     <div className="flex items-center">
-                        <img src={logo} alt="Logo" className="h-10 w-auto mr-3" />
+                        
                         <h1 className="bg-gradient-to-r from-orange-800 dark:from-orange-400 via-blue-800 dark:via-blue-400 to-green-800 dark:to-green-400 text-transparent bg-clip-text bg-300% animate-gradient">
                             Hi MD WASIM HASAN
                         </h1>

@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { CheckCircleIcon, XCircleIcon } from '@heroicons/react/solid';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -21,7 +20,6 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus(null);
-
     try {
       const response = await fetch('https://formspree.io/f/your-form-id', {
         method: 'POST',
@@ -34,10 +32,8 @@ const Contact = () => {
       if (response.ok) {
         setSubmitStatus('success');
         setFormData({ name: '', email: '', message: '' });
-      } else {
-        setSubmitStatus('error');
       }
-    } catch (error) {
+    } catch {
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -45,9 +41,9 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-900">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
-        <h2 className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-orange-500 via-blue-500 to-green-500 text-transparent bg-clip-text animate-gradient shadow-lg">
+    <section id="contact" className="py-6 bg-gray-900">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+        <h2 className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-orange-500 via-blue-500 to-green-500 text-transparent bg-clip-text animate-gradient ">
           Get In Touch
         </h2>
 
@@ -88,6 +84,16 @@ const Contact = () => {
               )}
             </button>
           </form>
+          {submitStatus === 'success' && (
+            <p className="mt-4 text-green-500 text-center">
+              Your message has been sent successfully!
+            </p>
+          )}
+          {submitStatus === 'error' && (
+            <p className="mt-4 text-red-500 text-center">
+              Something went wrong. Please try again later.
+            </p>
+          )}
         </div>
       </div>
     </section>

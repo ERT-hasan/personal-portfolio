@@ -1,4 +1,3 @@
-import React from 'react';
 import PortfolioImg from "../assets/wasim.jpg"
 import CalculatorImg from "../assets/calcu.jpg"
 import EcommerceImg from "../assets/ecom.jpg"
@@ -6,9 +5,12 @@ import EcommerceImg from "../assets/ecom.jpg"
 const Projects = () => {
   const projects = [
     {
-      title: "Personal Portfolio",
-      description: "Built a sleek personal portfolio using React & Tailwind CSS, showcasing my projects, skills, and experience with a responsive and modern UI. Integrated framer-motion for smooth animations and dynamic components for better interactivity. Optimized for performance & accessibility, ensuring a seamless user experience. Implemented dark mode support and mobile-friendly design." ,
-      tech: ["1. React", "2. Tailwind CSS", "3. CSS", "4. Bootstrap"],
+      title: "Mern-Airbnb-Clone",
+      description: `Developed a full-stack Airbnb-style web application using MongoDB, Express.js, React.js, Node.js, EJS, and Tailwind CSS
+      Implemented user authentication, property listings, advanced search & filters, and a complete booking workflow.
+      Added image upload and media management using Multer + Cloudinary, ensuring secure and optimized file handling.
+      `,
+     tech: [`Node.js | Express.js | MongoDB | Mongoose | JWT Auth | Bcrypt | Multer | Cloudinary | REST APIs | MVC Architecture | EJS`],
       image: PortfolioImg
     },
     {
@@ -26,9 +28,9 @@ const Projects = () => {
   ]
 
   return (
-    <section id="projects" className="py-16 bg-gray-900">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
-        <h2 className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-orange-500 via-blue-500 to-green-500 text-transparent bg-clip-text animate-gradient shadow-lg">
+    <section id="projects" className="py-14 bg-gray-900">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-9">
+        <h2 className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-orange-500 via-blue-500 to-green-500 text-transparent bg-clip-text animate-gradient ">
           My Projects
         </h2>
 
@@ -38,12 +40,12 @@ const Projects = () => {
               key={index} 
               className="bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:scale-105"
             >
-              <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
-              <div className="p-5">
-                <h3 className="text-xl font-bold mb-2 bg-gradient-to-r from-orange-500 via-blue-500 to-green-500 text-transparent bg-clip-text animate-gradient">
+              <img src={project.image} alt={project.title} className="w-full h-50 object-cover" />
+              <div className="p-1">
+                <h3 className="text-xl font-bold mb-0 bg-gradient-to-r from-orange-500 via-blue-500 to-green-500 text-transparent bg-clip-text animate-gradient">
                   {project.title}
                 </h3>
-                <p className="text-gray-300 mb-4">{project.description}</p>
+                <p className="text-gray-300 mb-0">{project.description}</p>
                 <div className="flex flex-wrap gap-1">
                   {project.tech.map((tech, i) => (
                     <span 
