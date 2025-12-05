@@ -12,7 +12,6 @@ const Hero = () => {
   return (
     <section
       id="home"
-      // 🔹 Mobile: min-h-[70vh], Desktop: full screen
       className="pt-20 md:pt-40 min-h-screen bg-gradient-to-b from-gray-800 to-gray-900"
     >
       <div
@@ -56,18 +55,22 @@ const Hero = () => {
           </motion.h1>
 
           <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed">
-            My name is{" "}
+            Hi, I&apos;m{" "}
             <span className="text-green-400 font-semibold">Md Wasim Hasan</span>.
-            I completed my{" "}
-            <span className="text-blue-400 font-semibold">MCA in 2024</span>, and
-            I am a{" "}
+            I&apos;m a{" "}
             <span className="text-orange-400 font-semibold">
-              Backend Developer
+              Backend Developer (Fresher)
+            </span>{" "}
+            with hands-on experience in{" "}
+            <span className="text-purple-400 font-semibold">
+              Node.js, Express, and MongoDB
             </span>
-            . I have built projects using{" "}
-            <span className="text-purple-400">React &amp; Node.js</span>, including
-            my personal portfolio. I also completed training at{" "}
-            <span className="text-pink-400">Pantech e-Learning</span>.
+            . I completed my{" "}
+            <span className="text-blue-400 font-semibold">MCA in 2024</span> and
+            recently built an Airbnb-style backend project using{" "}
+            <span className="text-pink-400 font-semibold">MVC architecture</span>.
+            I&apos;m looking for an opportunity where I can learn, grow, and work
+            on real-world backend systems.
           </p>
 
           {/* Buttons */}
