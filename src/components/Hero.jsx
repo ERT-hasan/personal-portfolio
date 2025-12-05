@@ -12,16 +12,30 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="pt-2 md:pt-40 min-h-[60vh] md:min-h-screen bg-gradient-to-b from-gray-800 to-gray-900"
+      // 🔹 Mobile: min-h-[70vh], Desktop: full screen
+      className="pt-3 md:pt-32 py-16 bg-gradient-to-b from-gray-800 to-gray-900"
     >
-      <div className="max-w-5xl mx-auto px-3 sm:px-4 lg:px-6 h-full flex flex-col md:flex-row items-center gap-7">
-
+      <div
+        className="
+          max-w-5xl mx-auto px-3 sm:px-4 lg:px-6 h-full
+          flex flex-col md:flex-row
+          items-start md:items-center
+          gap-7
+        "
+      >
         {/* Profile Image */}
-        <div className="relative">
+        <div className="relative flex justify-center md:justify-start w-full md:w-auto">
           {showPhoto && (
-            <figure className="flex items-center justify-center w-[180px] h-[180px] sm:w-[250px] sm:h-[240px]">
+            <figure
+              className="
+                flex items-center justify-center
+                w-[150px] h-[150px]
+                sm:w-[200px] sm:h-[200px]
+                md:w-[230px] md:h-[230px]
+              "
+            >
               <img
-                className="w-full h-full rounded-full object-cover border-3 border-purple-500 shadow-lg"
+                className="w-full h-full rounded-full object-cover border-4 border-purple-500 shadow-lg"
                 src={currentPhoto}
                 alt="wasim"
               />
@@ -30,24 +44,29 @@ const Hero = () => {
         </div>
 
         {/* Hero Text */}
-        <div className="text-center md:text-left max-w-2xl">
+        <div className="text-center md:text-left max-w-2xl w-full">
           <motion.h1
-            className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-orange-500 via-blue-500 to-green-500 text-transparent bg-clip-text mb-4"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold
+              bg-gradient-to-r from-orange-500 via-blue-500 to-green-500
+              text-transparent bg-clip-text mb-4"
             initial={{ x: -30, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
           >
-            Frontend Developer
+            Backend Developer
           </motion.h1>
 
-          <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-            My name is <span className="text-green-400 font-semibold">Md Wasim Hasan</span>. I
-            completed my <span className="text-blue-400 font-semibold">MCA in 2024</span>, and I
-            am a{" "}
+          <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed">
+            My name is{" "}
+            <span className="text-green-400 font-semibold">Md Wasim Hasan</span>.
+            I completed my{" "}
+            <span className="text-blue-400 font-semibold">MCA in 2024</span>, and
+            I am a{" "}
             <span className="text-orange-400 font-semibold">
-              Full-Stack MERN Developer
-            </span>.
-            I have built projects using <span className="text-purple-400">React & Node.js</span>,
-            including my personal portfolio. I also completed training at{" "}
+              Backend Developer
+            </span>
+            . I have built projects using{" "}
+            <span className="text-purple-400">React &amp; Node.js</span>, including
+            my personal portfolio. I also completed training at{" "}
             <span className="text-pink-400">Pantech e-Learning</span>.
           </p>
 
@@ -59,7 +78,6 @@ const Hero = () => {
               </button>
             </a>
           </div>
-
         </div>
       </div>
     </section>

@@ -16,7 +16,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="w-full bg-gray-900 py-16"
+      className="w-full bg-gray-900 scroll-py-16"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-7">
         
@@ -34,14 +34,14 @@ const About = () => {
           <div>
             <p className="text-lg text-gray-300 leading-relaxed">
               I&apos;m a passionate 
-              <span className="text-green-400 font-semibold"> Full-Stack MERN Developer (Fresher)</span> 
+              <span className="text-green-400 font-semibold"> Backend Developer (Fresher)</span> 
               who loves building clean, interactive, and user-friendly web applications.
               <br /><br />
               I’m actively learning 
               <span className="text-blue-400"> Node.js</span>, 
               <span className="text-gray-300"> Express.js</span>, and 
               <span className="text-green-300"> backend architecture</span> 
-              to become a complete full-stack developer.
+              to become a complete Backend developer.
               <br /><br />
               🎯 <strong className="text-yellow-400">Goal:</strong>  
               Build impactful products & grow as a developer.
