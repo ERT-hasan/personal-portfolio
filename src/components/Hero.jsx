@@ -13,7 +13,7 @@ const Hero = () => {
     <section
       id="home"
       // 🔹 Mobile: min-h-[70vh], Desktop: full screen
-      className="pt-3 md:pt-32 py-16 bg-gradient-to-b from-gray-800 to-gray-900"
+      className="pt-20 md:pt-40 min-h-screen bg-gradient-to-b from-gray-800 to-gray-900"
     >
       <div
         className="
