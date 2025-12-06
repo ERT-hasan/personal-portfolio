@@ -1,7 +1,7 @@
 import Navebar from "./components/Navebar";
 import Hero from "./components/Hero";
-import About from "./components/About";
 import Projects from "./components/Projects";
+import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -17,16 +17,10 @@ function App() {
        
    <Navebar/>
    <Hero/>
-   <About/>
    <Projects/>
+   <About/>
    <Contact/>
-   <Footer/>
-   
-  
-   
-   
-   
-        
+   <Footer/>      
     </>
   );
 }

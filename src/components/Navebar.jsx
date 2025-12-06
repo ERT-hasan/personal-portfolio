@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
-const sections = ["home", "about", "projects", "contact"];
+const sections = ["home", "projects","about", "contact"];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
