@@ -2,7 +2,7 @@
 
 A clean and modern personal portfolio website built using **React**, **Vite**, and **Tailwind CSS**. It showcases projects, skills, resume, and contact details – perfect for developers looking to present themselves professionally.
 
-🌐 **Live Demo**: [https://ert-hasan.github.io/personal-portfolio/](https://ert-hasan.github.io/personal-portfolio/)
+🌐 **Live Demo**: https://ert-hasan.github.io/personal-portfolio/
 
 ---
 
