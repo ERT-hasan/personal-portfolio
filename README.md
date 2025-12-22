@@ -1,4 +1,4 @@
-# 💼 Personal Portfolio
+<img width="1889" height="896" alt="wasimScreen" src="https://github.com/user-attachments/assets/a9fd666b-78fe-4c5d-b349-382b1b44344f" /># 💼 Personal Portfolio
 
 A clean and modern personal portfolio website built using **React**, **Vite**, and **Tailwind CSS**. It showcases projects, skills, resume, and contact details – perfect for developers looking to present themselves professionally.
 
@@ -9,8 +9,9 @@ A clean and modern personal portfolio website built using **React**, **Vite**, a
 ## 📸 Screenshot
 
 > _Add a screenshot here_  
-> ![Portfolio Screenshot](<img width="1853" height="769" alt="Screenshot 2025-08-06 165505" src="https://github.com/user-attachments/assets/4dd53f4e-9b39-4130-b41a-910b2228fdea" />
-)
+> ![Portfolio Screenshot] ![Uploading wasimScreen.png…]
+
+
 
 ---
 
