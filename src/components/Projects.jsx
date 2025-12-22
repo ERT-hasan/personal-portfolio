@@ -1,42 +1,105 @@
 import PortfolioImg from "../assets/wasim.jpg";
-import CalculatorImg from "../assets/calcu.jpg";
-import EcommerceImg from "../assets/ecom.jpg";
+import CouponImg from "../assets/Coupon.jpg";
+import currencyImg from "../assets/currency.jpg";
 
 const Projects = () => {
   const projects = [
-    {
-      title: "MERN Airbnb Clone",
-      description: `
-      A full-stack Airbnb-style application built using the MERN stack with MVC architecture.
-      Features include user authentication, property listings, advanced search & filtering,
-      booking workflow, and secure image uploads using Multer + Cloudinary.
-      `,
-      tech: [
-        "Node.js", "Express.js", "MongoDB", "Mongoose", "JWT Auth", "Bcrypt",
-        "Multer", "Cloudinary", "REST APIs", "MVC Architecture", "EJS"
-      ],
-      image: PortfolioImg,
-    },
-    {
-      title: "Calculator",
-      description: `
-      A simple calculator built using HTML, CSS, and JavaScript.
-      Supports basic arithmetic operations and uses a clean, responsive UI.
-      Includes event listeners for interactive button clicks and mobile-friendly layout.
-      `,
-      tech: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-      image: CalculatorImg,
-    },
-    {
-      title: "E-commerce Platform",
-      description: `
-      A modern and responsive mini e-commerce frontend.
-      Uses product cards, navbar, hover animations, and mobile-friendly layout.
-      Built with HTML, CSS (Flexbox + Grid), and JavaScript.
-      `,
-      tech: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-      image: EcommerceImg,
-    },
+      {
+  title: "MERN Airbnb Clone",
+  description: (
+    <div className="space-y-3 max-h-44 overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800">
+      {/* Subtle highlight */}
+      <div className="rounded-lg border-l-4 border-emerald-500 bg-gray-800/60 p-4">
+        <p className="text-sm text-emerald-300 font-medium">
+          A full-stack Airbnb-style application built using the MERN stack with MVC architecture.
+        </p>
+      </div>
+
+      <ul className="list-disc list-inside text-gray-400 text-sm space-y-1">
+        <li>User authentication with secure login and authorization.</li>
+        <li>Property listings with advanced search and filtering.</li>
+        <li>End-to-end booking workflow.</li>
+        <li>Secure image uploads using Multer and Cloudinary.</li>
+      </ul>
+    </div>
+  ),
+  tech: [
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Mongoose",
+    "JWT Auth",
+    "Bcrypt",
+    "Multer",
+    "Cloudinary",
+    "REST APIs",
+    "MVC Architecture",
+    "EJS",
+  ],
+  image: PortfolioImg,
+},
+
+   {
+  title: "Coupon Management",
+  description: (
+    <div className="space-y-3 max-h-44 overflow-y-auto pr-2">
+      {/* Subtle highlight */}
+      <div className="rounded-lg border-l-4 border-indigo-500 bg-gray-800/60 p-4">
+        <p className="text-sm text-indigo-300 font-medium">
+          A backend service to create and manage discount coupons for an e-commerce platform.
+        </p>
+      </div>
+
+      <ul className="list-disc list-inside text-gray-400 text-sm space-y-1">
+        <li>Built RESTful APIs to create, apply, and manage coupons.</li>
+        <li>Implemented eligibility checks based on user and cart conditions.</li>
+        <li>Supported flat and percentage discounts with proper validation rules.</li>
+        <li>Applied maximum discount logic to automatically select the best coupon.</li>
+        <li>Designed modular validation and reusable logic for scalability.</li>
+      </ul>
+    </div>
+  ),
+
+  tech: [
+    "Node.js",
+    "Express.js",
+    "REST APIs",
+    "JavaScript",
+    "In-memory / JSON",
+    "Postman",
+    "Git",
+    "GitHub",
+  ],
+
+  image: CouponImg,
+},
+
+   {
+  title: "Currency Converter Web App",
+  description: (
+    <div className="space-y-3 max-h-44 overflow-y-auto pr-2">
+      {/* Subtle highlight */}
+      <div className="rounded-lg border-l-4 border-sky-500 bg-gray-800/60 p-4">
+        <p className="text-sm text-sky-300 font-medium">
+          A responsive web application that converts currencies using real-time exchange rates.
+        </p>
+      </div>
+
+      <ul className="list-disc list-inside text-gray-400 text-sm space-y-1">
+        <li>Integrated Fetch API to retrieve live currency exchange rates.</li>
+        <li>Implemented input validation and error handling for invalid inputs and network issues.</li>
+        <li>Focused on accuracy, usability, and smooth user experience.</li>
+        <li>Designed a mobile-friendly layout for consistent performance across devices.</li>
+        <li>Applied clean code practices for better readability and maintainability.</li>
+      </ul>
+    </div>
+  ),
+
+  tech: ["HTML", "CSS", "JavaScript", "Fetch API"],
+
+  image: currencyImg,
+},
+
   ];
 
   return (

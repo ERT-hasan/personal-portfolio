@@ -12,7 +12,8 @@ const Footer = () => {
             bg-gradient-to-r from-orange-500 via-blue-500 to-green-500 
             text-transparent bg-clip-text animate-gradient"
           >
-            © 2025 E-R-T Hasan. All rights reserved.
+            © 2025 E-R-T Hasan. Designed & developed by me.
+
           </p>
 
           {/* Social Icons */}

@@ -6,7 +6,7 @@ const Hero = () => {
   const [showPhoto] = useState(true);
   const [currentPhoto] = useState(hasan);
 
-  const resumeURL = `${import.meta.env.BASE_URL}resume.pdf`;
+  const WasimURL = `${import.meta.env.BASE_URL}Wasim-Backend.pdf`;
 
   return (
     <section
@@ -62,7 +62,7 @@ const Hero = () => {
 
           {/* Button */}
           <div className="flex flex-col sm:flex-row gap-4 items-center mt-6 justify-center md:justify-start">
-            <a href={resumeURL} download="resume.pdf">
+            <a href={WasimURL} download="resume.pdf">
               <button className="bg-blue-500 shadow-lg hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 cursor-pointer px-8 py-3 rounded-lg transition">
                 Open CV
               </button>
